@@ -1,6 +1,6 @@
 {
-  "name": "Salomon Katula Portfolio",
-  "description": "Portfolio and resume website for Salomon Katula, Expert in Information Technology, Communications and Media.",
+  "name": "Portfolio de Salomon Katula",
+  "description": "Site portfolio et CV de Salomon Katula, Expert en Technologies de l'Information, Communications et Médias.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

@@ -6353,3 +6353,97 @@ span {
 /* ==== 
  --------- (5.12) coming soon section styles end ---------
  ==== */
+
+/* ==== 
+ --------- (5.13) contact form validation & feedback styles ---------
+ ==== */
+.input-single.has-error input,
+.input-single.has-error textarea,
+.input-single.has-error .select {
+  border-color: #f20101 !important;
+  box-shadow: 0 0 0 1px rgba(242, 1, 1, 0.45) !important;
+}
+
+.field-error-msg {
+  display: none;
+  color: #ff5252;
+  font-size: 13px;
+  margin-top: 6px;
+  padding-left: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  animation: fadeInError 0.25s ease-in-out;
+}
+
+.field-error-msg.visible {
+  display: block;
+}
+
+@keyframes fadeInError {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-form-status {
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.contact-form-status.status-success {
+  display: block;
+  background-color: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #4ade80;
+}
+
+.contact-form-status.status-error {
+  display: block;
+  background-color: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #f87171;
+}
+
+.contact-form-status .btn-mailto-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  background-color: #f20101;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.contact-form-status .btn-mailto-action:hover {
+  background-color: #d10101;
+  transform: translateY(-1px);
+}
+
+.btn--secondary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.light-mode .contact-form-status.status-success {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.light-mode .contact-form-status.status-error {
+  background-color: #fef2f2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.light-mode .field-error-msg {
+  color: #dc2626;
+}
