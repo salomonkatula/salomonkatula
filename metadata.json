@@ -1,0 +1,8 @@
+{
+  "name": "Salomon Katula Portfolio",
+  "description": "Portfolio and resume website for Salomon Katula, Expert in Information Technology, Communications and Media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
